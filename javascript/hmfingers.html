@@ -1,0 +1,27 @@
+<html>
+        <head>
+            <title>Guess No. of Fingers</title>
+            <style type="text/css">
+                
+            </style>
+        </head>    
+        <body>
+            <p>How many fingers am i holding up?</p>
+            <p>
+                <input type="text" id="inputGuess">
+                <button id="buttonGuess" value="Guess">Guess!</button>
+            </p>
+            <script type="text/javascript">
+
+                document.getElementById("buttonGuess").onclick=function(){
+                    var randNum = Math.floor(Math.random()*6);
+                    if(document.getElementById("inputGuess").value == randNum){
+                        alert("correct");
+                    }else{
+                        alert("incorrect "+randNum);
+                    }
+                }
+            </script>
+        </body>
+    </html>
+    
